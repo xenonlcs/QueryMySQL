@@ -1,0 +1,3 @@
+select MATRICOLA, NOME_IMP
+from DIPENDENTI
+where STIPENDIO = (select  min(STIPENDIO) from DIPENDENTI) 

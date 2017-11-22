@@ -1,0 +1,6 @@
+select *
+from FORNITORI FO, FORNITURE FT
+where FO.COD = FT.FCOD 
+	and FO.COD = 'F003'
+	and (FT.PCOD = 'P001' or FT.PCOD = 'P006')
+	and FT.QUANTITA > 80
